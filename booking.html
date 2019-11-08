@@ -4,11 +4,18 @@
     <meta charset="UTF-8">
     <title>Sara Guest House</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    
 </head>
 <body>
 
 
   <div class="fixed__background"></div>
+
+  <div id="modal__wrapper" class="modal">
+    <span class="modal__close">&times;</span>
+    <img class="modal__content" id="modal__img">
+    <div id="modal__caption"></div>
+  </div>
 
   <nav class="nav">
     <div class="nav__logo">
@@ -17,16 +24,16 @@
 
     <div class="nav__list">
       <a href="/booking.html" class="nav__list-item">
-        Booking
+        Home
       </a>
       <a href="/booking.html" class="nav__list-item">
         Booking
       </a>
       <a href="/booking.html" class="nav__list-item">
-        Booking
+        To do 
       </a>
       <a href="/booking.html" class="nav__list-item">
-        Booking
+        Location
       </a>
 
 
@@ -36,26 +43,29 @@
   <div  class="info">
     <div class=" info__rom">
       <div class=" info__description"> <h1>Rom 1</h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta non, accusantium, eos veniam ipsum beatae debitis quibusdam, enim molestiae quos quia rem ut vero necessitatibus? Odio officiis, a odit voluptas dolore libero. Quae facilis sequi assumenda, cupiditate ipsam autem libero totam dolorum dolorem quibusdam adipisci inventore fuga impedit laborum commodi explicabo quasi mollitia omnis. Architecto ab consequatur non? Vero nulla voluptatum labore, obcaecati magni pariatur, ducimus quaerat quidem sunt ad dolores impedit laudantium doloribus facilis voluptatibus recusandae dicta atque aliquid quasi minima? Non, ad nulla provident corporis, animi iusto accusamus eum, quae adipisci quis perferendis. Voluptates perspiciatis, quis tempora eveniet ducimus, laudantium incidunt adipisci veritatis amet earum, nobis aliquid officia ratione deleniti quae esse! Quas cum modi accusamus. Modi excepturi amet unde voluptatibus possimus alias tempora neque cum aliquid aut a laborum sed, maiores at blanditiis voluptas magni quod eum rem ad natus voluptates vel repellat. Veritatis omnis delectus aperiam est nam, rem vel laboriosam libero voluptates et. Voluptatem, laborum aperiam ducimus neque optio ipsa amet totam asperiores expedita illo quisquam nesciunt quia voluptatum nulla. Magnam aspernatur sunt voluptatem mollitia quo alias iusto culpa voluptate est delectus sed repellat ipsum voluptatum harum cum, nostrum aperiam ex vel, omnis voluptates voluptas!</div>
-      <div class="info__image-wrapper"><img src="image/rom1.jpg" alt="Rom 1" class=" info__image"></div>
+      <div class="info__image-wrapper"><img src="image/rom1.jpg" alt="Rom 1" class=" info__image" onclick="openModal('image/rom1.jpg', 'Rom 1')"></div>
     </div> 
     <div class=" info__rom info__rom--left">
       <div class=" info__description"> <h1>Rom 2</h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta non, accusantium, eos veniam ipsum beatae debitis quibusdam, enim molestiae quos quia rem ut vero necessitatibus? Odio officiis, a odit voluptas dolore libero. Quae facilis sequi assumenda, cupiditate ipsam autem libero totam dolorum dolorem quibusdam adipisci inventore fuga impedit laborum commodi explicabo quasi mollitia omnis. Architecto ab consequatur non? Vero nulla voluptatum labore, obcaecati magni pariatur, ducimus quaerat quidem sunt ad dolores impedit laudantium doloribus facilis voluptatibus recusandae dicta atque aliquid quasi minima? Non, ad nulla provident corporis, animi iusto accusamus eum, quae adipisci quis perferendis. Voluptates perspiciatis, quis tempora eveniet ducimus, laudantium incidunt adipisci veritatis amet earum, nobis aliquid officia ratione deleniti quae esse! Quas cum modi accusamus. Modi excepturi amet unde voluptatibus possimus alias tempora neque cum aliquid aut a laborum sed, maiores at blanditiis voluptas magni quod eum rem ad natus voluptates vel repellat. Veritatis omnis delectus aperiam est nam, rem vel laboriosam libero voluptates et. Voluptatem, laborum aperiam ducimus neque optio ipsa amet totam asperiores expedita illo quisquam nesciunt quia voluptatum nulla. Magnam aspernatur sunt voluptatem mollitia quo alias iusto culpa voluptate est delectus sed repellat ipsum voluptatum harum cum, nostrum aperiam ex vel, omnis voluptates voluptas!</div>
-      <div class="info__image-wrapper"><img src="image/rom2.jpg" alt="Rom 1" class=" info__image"></div>
+      <div class="info__image-wrapper"><img src="image/rom2.jpg" alt="Rom 1" class=" info__image" onclick="openModal('image/rom2.jpg', 'Rom 2')"></div>
     </div> 
     <div class=" info__rom">
       <div class=" info__description"> <h1>Rom 3</h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta non, accusantium, eos veniam ipsum beatae debitis quibusdam, enim molestiae quos quia rem ut vero necessitatibus? Odio officiis, a odit voluptas dolore libero. Quae facilis sequi assumenda, cupiditate ipsam autem libero totam dolorum dolorem quibusdam adipisci inventore fuga impedit laborum commodi explicabo quasi mollitia omnis. Architecto ab consequatur non? Vero nulla voluptatum labore, obcaecati magni pariatur, ducimus quaerat quidem sunt ad dolores impedit laudantium doloribus facilis voluptatibus recusandae dicta atque aliquid quasi minima? Non, ad nulla provident corporis, animi iusto accusamus eum, quae adipisci quis perferendis. Voluptates perspiciatis, quis tempora eveniet ducimus, laudantium incidunt adipisci veritatis amet earum, nobis aliquid officia ratione deleniti quae esse! Quas cum modi accusamus. Modi excepturi amet unde voluptatibus possimus alias tempora neque cum aliquid aut a laborum sed, maiores at blanditiis voluptas magni quod eum rem ad natus voluptates vel repellat. Veritatis omnis delectus aperiam est nam, rem vel laboriosam libero voluptates et. Voluptatem, laborum aperiam ducimus neque optio ipsa amet totam asperiores expedita illo quisquam nesciunt quia voluptatum nulla. Magnam aspernatur sunt voluptatem mollitia quo alias iusto culpa voluptate est delectus sed repellat ipsum voluptatum harum cum, nostrum aperiam ex vel, omnis voluptates voluptas!</div>
-      <div class="info__image-wrapper"><img src="image/rom1.jpg" alt="Rom 1" class=" info__image"></div>
+      <div class="info__image-wrapper"><img src="image/rom1.jpg" alt="Rom 1" class=" info__image" onclick="openModal('image/rom1.jpg', 'Rom 3')"></div>
     </div> 
 
     <div class="booking">
       <h1>Book room</h1>
       <form class="booking__form">
-        <div class="booking__form_input">First Name: <input id="firstName" type="text"></div>
-        <div class="booking__form_input">Last Name: <input id="lastName" type="text"></div>
-        <div class="booking__form_input">People: <input id="numberOfPeople" type="number" min="1"></div>
+        <div class="booking__form_input">First Name: <input id="firstName" type="text" placeholder="First Name"></div>
+        <div class="booking__form_input">Last Name: <input id="lastName" type="text" placeholder="Last Name"></div>
+        <div class="booking__form-people">
+          <div class="booking__form_input number">Adults: <input id="numberOfAdults" type="number" min="0" placeholder="0"></div>
+          <div class="booking__form_input number">Children: <input id="numberOfChildren" type="number" min="0" placeholder="0"></div>
+        </div>
         <div class="booking__form_input">Check-in date: <input id="checkIn" type="date"></div>
         <div class="booking__form_input">Check-out date: <input id="checkOut" type="date"></div>
-        <div class="booking__form_input"><input type="submit"></div>
+        <div class="booking__form_input submit"><input type="submit"></div>
       </form>
     </div>
   </div>
@@ -70,4 +80,5 @@
 
 
 </body>
+<script src="js/modal.js"></script>
 </html>
